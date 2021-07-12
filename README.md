@@ -15,17 +15,22 @@ run the server in the local machine by 'python manage.py runserver'
 the functionality of the API is checked in testing tools like postman using the below urls
 
 1. fetching the all users. 
+
     'http://127.0.0.1:8000/Employee/Search/'  in 'GET' method 
 
 2. fetch the unique user using email or mobile no.
+
     'http://127.0.0.1:8000/Employee/Search/'  in 'POST' method. use the body in json format.
+
     {
         "EmailId":"",
     }
 
     replace the "EmailId" with "MobileNo" or both
 3. Creating the user.
+
     'http://127.0.0.1:8000/Employee/Create/' in 'POST' method. use the body in json format.
+
 
     {
     "FirstName": "",
@@ -36,8 +41,11 @@ the functionality of the API is checked in testing tools like postman using the 
     } 
 
 4. Updating the user.
+
     'http://127.0.0.1:8000/Employee/Update/' in 'PUT' method. use the body in json format.
+
     In this route email need to add for fetching the user but email and mobile no won't change beacause the email and mobile fields are unique ane read only fields.
+
     {
     "FirstName": "Narasimha",
     "LastName": "Rao",
@@ -52,6 +60,7 @@ the functionality of the API is checked in testing tools like postman using the 
     }
 
 5.  Deleting the User.
+
     'http://127.0.0.1:8000/Employee/Delete/' in 'DELETE' method.use the body in json format.
 
     in this route email should be passed in the json formate to fetch and delete the user.
