@@ -1,0 +1,6 @@
+asgiref==3.4.1
+Django==3.2.5
+djangorestframework==3.12.4
+mysqlclient @ file:///C:/Users/welcome/Downloads/Dashboard/Jala_dashboard/mysqlclient-1.4.6-cp38-cp38-win_amd64.whl
+pytz==2021.1
+sqlparse==0.4.1
